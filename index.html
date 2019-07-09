@@ -1,0 +1,18 @@
+<html>
+  <head>
+  <script>
+    var token = null;
+    function getAuthToken() {
+      return token;
+    }
+    
+    function setToken(nextToken) {
+      token = nextToken;
+    }
+  </script>
+  </head>
+  
+  <body>
+    <a href="#" onclick="setToken('test')">Test</a>
+  </body>
+</html>
