@@ -1,13 +1,8 @@
 <html>
   <head>
   <script>
-    var token = null;
-    function getAuthToken() {
-      return token;
-    }
-    
     function setToken(nextToken) {
-      token = nextToken;
+      window.parent.postMessage({ type: 'auth', authToken: nextToken }, '*');
     }
   </script>
   </head>
